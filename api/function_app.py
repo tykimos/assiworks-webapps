@@ -9,6 +9,6 @@ def message(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     return func.HttpResponse(
-        json.dumps({"text": "Hello from the API"}),
+        json.dumps({"text": "Hello from the API version 1"}),
         mimetype="application/json"
     )
